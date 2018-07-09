@@ -1,0 +1,5 @@
+export const FETCH_CATAGORIES = "FETCH_CATAGORIES";
+export const FETCH_FEATURED = "FETCH_FEATURED";
+
+export const FETCH_GAME_ID = "FETCH_GAME_ID";
+export const FETCH_GAME_BY_ID = "FETCH_GAME_BY_ID";

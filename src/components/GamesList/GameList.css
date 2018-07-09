@@ -1,0 +1,12 @@
+.GameList {
+	margin: auto;
+	margin-top: 50px;
+	display: block;
+	background-color: grey;
+	width: 80%;
+}
+
+.GameList table {
+	margin: auto;
+	width: 80%;
+}

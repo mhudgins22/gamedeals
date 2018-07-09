@@ -1,0 +1,33 @@
+.Featured {
+	width: 60%;
+	border: 1px solid #ccc;
+	height: 250px;
+	margin: auto;
+	margin-top: 15px;
+	position: relative;
+	display: inline-block;
+}
+
+.Featured h2 {
+	float: right;
+	width: 40%;
+	text-align: center;
+	margin: auto;
+}
+
+.Banner {
+	 float: left;
+	 height: auto;
+	 display: inline-block;
+	 padding-top: 25px;
+	 padding-left: 15px;
+	 max-width: 60%;
+	 max-height: 200px;
+}
+
+.Selectors {
+	display: block;
+	float: left;
+	float: bottom;
+}
+

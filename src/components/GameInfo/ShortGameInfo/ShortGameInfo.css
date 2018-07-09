@@ -1,0 +1,24 @@
+.Short {
+	float: right;
+	display: inline-block;
+	width: 20%;
+	margin: 15px;
+	border: 1px solid black;
+}
+
+.Short ul {
+	list-style-type: none;
+	text-align: left;
+}
+
+.Short ul li {
+	display: inline;
+}
+
+.DevInfo {
+	border: 1px solid black;
+}
+
+.Description {
+	border: 1px solid black;
+}
