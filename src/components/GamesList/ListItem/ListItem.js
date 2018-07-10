@@ -11,13 +11,14 @@ const listItem = (props) => {
 	return(
 		<tr className = "ListItem">
 			<td><img src = {props.cover} alt = ""/></td>
+			<td><h4>{props.vendor}</h4></td>
 			<td>
-				<Link 
+				{props.id ? <Link 
 					to = {"/id=" + props.id} 
 					style = {{textDecoration: "none", color: "black"}}
 					onClick = {(gameId) => this.props.onFetchGameId(props.id)}>
 						<h4>{props.name}</h4>
-				</Link>
+				</Link> : <h4>{props.name}</h4>}
 			</td>
 			{props.discounted === true ? 
 				<td>

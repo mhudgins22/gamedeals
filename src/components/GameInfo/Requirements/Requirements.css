@@ -1,0 +1,26 @@
+.Requirements {
+	width: 75%;
+	border: 1px solid black;
+	margin: auto;
+	margin-top: 10px;
+	background-color: #a7c3ef;
+}
+
+.Min {
+	display: inline-block;
+	width: 45%;
+}
+
+.Min ul {
+	list-style-type: none;
+}
+
+.Rec {
+	display: inline-block;
+	width: 45%;
+	border-left: 1px solid black;
+}
+
+.Rec ul {
+	list-style-type: none;
+}

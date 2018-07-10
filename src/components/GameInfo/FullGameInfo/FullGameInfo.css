@@ -1,0 +1,10 @@
+.Full{
+	width: 75%;
+	margin: auto;
+	margin-top: 10px;
+	text-align: left;
+	border: 1px solid black;
+	padding: 3px;
+	background-color: #a7c3ef;
+	z-index: 0;
+}

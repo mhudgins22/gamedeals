@@ -1,3 +1,12 @@
-export {fetchCatagories, fetchFeatured} from "./browserActions";
+export {
+	fetchCatagories, 
+	fetchFeatured
+} from "./browserActions";
 
-export {fetchGameById, fetchGameId} from "./gamePageActions";
+export {
+	fetchGameById, 
+	fetchGameId, 
+	showPCRequirements, 
+	showMacRequirements, 
+	showLinuxRequirements
+} from "./gamePageActions";

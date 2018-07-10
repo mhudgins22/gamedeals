@@ -5,16 +5,18 @@ import * as actions from "../../store/actions/index";
 
 import Featured from "../../components/Featured/Featured";
 import GameInfo from "../../components/GameInfo/GameInfo";
+import SaleInfo from "../../components/SaleInfo/SaleInfo";
 
 let interval = null;
 
 class GamePage extends Component{
 
 	state = {
-		showFeatured: 0
+		showFeatured: 0,
 	}
 
 	
+	//set up auto showing of featured images
 	componentDidMount() {
 		const gameId = parseInt(this.props.location.pathname.slice(4), 10);
 		this.props.onFetchGameById(gameId);
@@ -52,7 +54,20 @@ class GamePage extends Component{
 					: 
 						<p>Loading...</p>
 				}
-				{this.props.game ? <GameInfo game = {this.props.game}/> : null}
+				{this.props.game ? <GameInfo 
+					game = {this.props.game} 
+					toPCRec = {this.props.showPCRequirements} 
+					toMacRec = {this.props.showMacRequirements} 
+					toLinuxRec = {this.props.showLinuxRequirements}
+					showPC = {this.props.showPC}
+					showMac = {this.props.showMac}
+					showLinux = {this.props.showLinux}/> : null}
+				{this.props.game ? <SaleInfo 
+					name = {this.props.game.name}
+					id = {this.props.game.id}
+					price = {this.props.game.price_overview.initial / 100}
+					final = {(this.props.game.price_overview.final / 100).toFixed(2)}
+					discounted = {this.props.game.price_overview.discount_percent === 0 ? false : true}/> : null}
 				<br />
 				<button 
 					onClick = {() => {
@@ -66,13 +81,19 @@ class GamePage extends Component{
 
 const mapStateToProps = state => {
 	return{
-		game: state.gamePage.game
+		game: state.gamePage.game,
+		showPC: state.gamePage.showPC,
+		showMac: state.gamePage.showMac,
+		showLinux: state.gamePage.showLinux
 	}
 }
 
 const mapDispatchToProps = dispatch => {
 	return{
-		onFetchGameById: (gameId) => dispatch(actions.fetchGameById(gameId))
+		onFetchGameById: (gameId) => dispatch(actions.fetchGameById(gameId)),
+		showPCRequirements: () => dispatch(actions.showPCRequirements()),
+		showMacRequirements: () => dispatch(actions.showMacRequirements()),
+		showLinuxRequirements: () => dispatch(actions.showLinuxRequirements())
 	}
 }
 

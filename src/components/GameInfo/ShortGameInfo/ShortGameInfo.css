@@ -4,16 +4,17 @@
 	width: 20%;
 	margin: 15px;
 	border: 1px solid black;
+	z-index: 100;
+	background-color: #90a9d1;
 }
 
 .Short ul {
-	list-style-type: none;
 	text-align: left;
+	overflow: wrap;
+	list-style-type: none;
 }
 
-.Short ul li {
-	display: inline;
-}
+
 
 .DevInfo {
 	border: 1px solid black;
@@ -21,4 +22,6 @@
 
 .Description {
 	border: 1px solid black;
+	text-align: left;
+	padding: 5px;
 }

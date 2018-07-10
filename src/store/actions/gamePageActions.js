@@ -20,3 +20,22 @@ export const fetchGameById = (gameId) => {
 		})
 	}
 }
+
+//actions to change requirements view
+export const showPCRequirements = () => {
+	return{
+		type: actionTypes.SHOW_PC_REQUIREMENTS
+	}
+}
+
+export const showMacRequirements = () => {
+	return{
+		type: actionTypes.SHOW_MAC_REQUIREMENTS
+	}
+}
+
+export const showLinuxRequirements = () => {
+	return{
+		type: actionTypes.SHOW_LINUX_REQUIREMENTS
+	}
+}

@@ -1,0 +1,10 @@
+.SaleInfo {
+	margin: auto;
+	background-color: #a7c3ef;
+	border: 1px solid black;
+	width: 75%;
+}
+
+.SaleInfo table {
+	margin: auto;
+}

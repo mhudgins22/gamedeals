@@ -7,7 +7,7 @@ const shortGameInfo = (props) => {
 	let genres = props.genres.map(genre => {
 		return(
 			<li key = {genre.id}>
-				{genre.description}&nbsp;
+				{genre.description}
 			</li>
 		);
 	});
@@ -23,10 +23,12 @@ const shortGameInfo = (props) => {
 				<p>{props.shortDescription}</p>
 			</div>
 			<div>
+				<h3>Genres:</h3>
 				<ul>
 					{genres}
 				</ul>
 			</div>
+			<h4>Metacritic: {props.metacritic.score}</h4>
 		</div>
 	);
 }
