@@ -13,7 +13,7 @@ const gameInfo = (props) => {
 				shortDescription = {props.game.short_description}
 				developers = {props.game.developers}
 				genres = {props.game.genres ? props.game.genres : []}
-				metacritic = {props.game.metacritic ? props.game.metacritic : "Not Yet Scored."}/>
+				metacritic = {props.game.metacritic}/>
 			<FullGameInfo 
 				name = {props.game.name}
 				fullDescription = {props.game.detailed_description}/>

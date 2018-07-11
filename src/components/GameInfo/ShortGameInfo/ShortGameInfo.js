@@ -28,7 +28,7 @@ const shortGameInfo = (props) => {
 					{genres}
 				</ul>
 			</div>
-			<h4>Metacritic: {props.metacritic.score}</h4>
+			<h4>Metacritic: {props.metacritic ? props.metacritic.score : <h4>Not Yet Scored</h4>}</h4>
 		</div>
 	);
 }

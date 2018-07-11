@@ -10,8 +10,8 @@
 
 .Short ul {
 	text-align: left;
-	overflow: wrap;
 	list-style-type: none;
+	border-bottom: 1px solid black;
 }
 
 
@@ -25,3 +25,4 @@
 	text-align: left;
 	padding: 5px;
 }
+
