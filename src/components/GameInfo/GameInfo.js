@@ -21,9 +21,9 @@ const gameInfo = (props) => {
 				categories = {props.game.categories ? props.game.categories : []}
 				genres = {props.game.genres ? props.game.genres : []}/>
 			<Requirements 
-				pcRequirements = {props.game.pc_requirements.length !== 0 ? props.game.pc_requirements : null}
-				macRequirements = {props.game.mac_requirements.length !== 0 ? props.game.mac_requirements : null}
-				linuxRequirements= {props.game.linux_requirements.length !== 0 ? props.game.linux_requirements : null}
+				pcRequirements = {props.game.pc_requirements !== 0 ? props.game.pc_requirements : null}
+				macRequirements = {props.game.mac_requirements !== 0 ? props.game.mac_requirements : null}
+				linuxRequirements= {props.game.linux_requirements !== 0 ? props.game.linux_requirements : null}
 				toPCRec = {props.toPCRec}
 				toMacRec = {props.toMacRec}
 				toLinuxRec = {props.toLinuxRec}

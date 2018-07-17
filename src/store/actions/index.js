@@ -5,7 +5,9 @@ export {
 
 export {
 	fetchGameById, 
-	fetchGameId, 
+	fetchGameId,
+	fetchGameDLC,
+	fetchBaseGame,
 	showPCRequirements, 
 	showMacRequirements, 
 	showLinuxRequirements

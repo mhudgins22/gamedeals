@@ -5,7 +5,7 @@
 	margin: auto;
 	margin-top: 15px;
 	position: relative;
-	display: inline-block;
+	display: block;
 	background-color: #a7c3ef;
 }
 
@@ -16,8 +16,12 @@
 	margin: auto;
 }
 
+.Featured img {
+	max-height: 200px;
+}
+
 .Banner {
-	 float: left;
+
 	 height: auto;
 	 display: inline-block;
 	 padding-top: 25px;

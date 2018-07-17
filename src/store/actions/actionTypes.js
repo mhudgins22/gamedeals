@@ -6,6 +6,7 @@ export const FETCH_FEATURED = "FETCH_FEATURED";
 export const FETCH_GAME_ID = "FETCH_GAME_ID";
 export const FETCH_GAME_BY_ID = "FETCH_GAME_BY_ID";
 
+//Fetch's base game if DLC or DLC if a base game
 export const FETCH_GAME_DLC = "FETCH_GAME_DLC";
 export const FETCH_BASE_GAME = "FETCH_BASE_GAME";
 
